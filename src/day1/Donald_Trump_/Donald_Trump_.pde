@@ -14,10 +14,8 @@ void draw(){
 if(mouseButton == LEFT){
 background(friend);
   image(mustache, mouseX-295,mouseY-60);
+image(Sunglasses, mouseX-300,mouseY-350);
 }
-if (mouseButton == RIGHT){
-  image(Sunglasses, mouseX,mouseY);
 
-}
 
 }
