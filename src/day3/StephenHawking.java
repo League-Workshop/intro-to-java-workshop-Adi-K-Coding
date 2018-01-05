@@ -13,7 +13,11 @@ public class StephenHawking {
 	// 2. ask the user for a sentence
 String sentence=JOptionPane.showInputDialog("Enter a sentence");
 	// 3. call the speak method below and send it the sentence
-speak(sentence);
+Voice voice = VoiceManager.getInstance().getVoice("kevin16");
+voice.allocate();
+voice.speak(sentence);
+voice.deallocate();
+
 	// 4. repeat steps 2 and 3 a lot of times
 	}
 	}
